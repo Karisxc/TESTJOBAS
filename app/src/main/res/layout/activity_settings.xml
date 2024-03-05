@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#191919"
+    tools:context=".SettingsActivity">
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"
+        android:text="Выберите период обновления цитаты:"
+        android:textSize="18sp"
+        android:textColor="#C2F54F" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/periodHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 час"
+            android:textColor="#C2F54F" />
+
+        <RadioButton
+            android:id="@+id/periodDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 день"
+            android:textColor="#C2F54F" />
+
+        <RadioButton
+            android:id="@+id/periodWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 неделя"
+            android:textColor="#C2F54F" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Обновить цитату"
+        android:textColor="#191919" />
+
+    <TextView
+        android:id="@+id/quoteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="90dp"
+        android:text="Цитата дня"
+        android:textSize="18sp"
+        android:textColor="#C2F54F" />
+
+
+</LinearLayout>

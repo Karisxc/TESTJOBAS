@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191919"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/quoteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center"
+        android:text="Цитата дня"
+        android:textColor="#C2F54F"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/imagesButton"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:onClick="showImages"
+        android:textColor="@color/black"
+        android:text="Изображения" />
+
+    <Button
+        android:id="@+id/videosButton"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:onClick="showVideos"
+        android:text="Видео" />
+
+    <Button
+        android:id="@+id/objects3DButton"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:onClick="show3DObjects"
+        android:text="3D-объекты" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:onClick="openSettings"
+        android:text="Настройки" />
+
+</LinearLayout>
